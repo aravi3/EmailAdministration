@@ -29,10 +29,9 @@ public class Email {
 
     // Ask for department
     private String setDepartment() {
-        // System.out.print("DEPARTMENT CODES\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none\nEnter department code: ");
-        // Scanner in = new Scanner(System.in);
-        // int depChoice = in.nextInt();
-        int depChoice = 1;
+        System.out.print("DEPARTMENT CODES\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none\nEnter department code: ");
+        Scanner in = new Scanner(System.in);
+        int depChoice = in.nextInt();
         if (depChoice == 1) { return "sales"; }
         if (depChoice == 2) { return "dev"; }
         if (depChoice == 3) { return "acct"; }
